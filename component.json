@@ -1,0 +1,9 @@
+{
+  "name": "fun",
+  "repo": "cvdlab/fun",
+  "version": "0.0.1",
+  "description": "Functional JavaScript",
+  "keywords": [],
+  "scripts": ["index.js"],
+  "license": "MIT"
+}
