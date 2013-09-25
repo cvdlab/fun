@@ -104,7 +104,7 @@ fun.apply = [f,x] => f(x)
  *   aa(x => 2*x)([1,2,3]); //[2,4,6]
  */
 
-fun.aa = f => array => [f(x) for x in array]
+fun.aa = f => list => [f(x) for x in list]
 
 /**
  * comp2([f,g])(x)
@@ -124,7 +124,7 @@ fun.comp2 = [f,g] => x => f(g(x))
  *   comp([x => x+1, y => 2*y, z => z-1])(5) //3
  */
 
-fun.comp = functions => fun.insl((f, g) => x => f(g(x)))(functions)
+fun.comp = functions => functions.reduce((f, g) => x => f(g(x))))
 
 /**
  * cons([f,g,h,...])(x)
@@ -196,7 +196,7 @@ fun.insr = operator => list => list.reduceRight(operator);
  * append `x` on the left of `list`
  */
 
-fun.al = [x,list] => [x].concat(list)
+fun.al = [x,list] => ([x]).concat(list)
 
 /**
  * ar([list,x])
